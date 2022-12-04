@@ -2,7 +2,6 @@
 import { Card, CardImg, CardImgOverlay,CardTitle } from "reactstrap"
 
 const CampsiteCard= (props)=>{
-    console.log(props)
     return (
         <Card>
             <CardImg 
