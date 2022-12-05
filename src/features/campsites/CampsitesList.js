@@ -8,7 +8,7 @@ import { selectAllCampsites } from "./campsitesSlice";
 
 
 
-const CampsitesList = ({ changeCampsiteId }) => {
+const CampsitesList = () => {
   const campsite = selectAllCampsites();
 
   return (
@@ -19,7 +19,6 @@ const CampsitesList = ({ changeCampsiteId }) => {
             md="5"
             className="m-4"
             key={campsite.id}
-            onClick={() => changeCampsiteId(campsite.id)}
           >
             <CampsiteCard campsite={campsite} />
           </Col>
